@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+    <head></head>
+    <body>
+        <style>
+           
+            .blank{
+                width: 100px;
+                height: 100px;
+                background-color: goldenrod;
+
+            }
+            .relative{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+            }
+            .relative>div{
+                padding: 50px;
+                background-color: blue;
+                margin-top: 10px;;
+            }
+            .relative>div:first-child{
+                padding: -140px;
+                background-color: green;
+                margin-top: 10px;;
+            }
+
+            .absolute{
+                width: 100px;
+                height: 100px;
+                background-color: hotpink;
+            }
+            .absolute>div{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            .fixed{
+                width: 100px;
+                height: 100px;
+                background-color: dodgerblue;
+            }
+            .fixed>div{
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+        </style>
+              
+
+
+        <div class="blank">
+            <div></div>
+
+        </div>
+
+        <div class="relative">
+            <div>relatie</div>
+        </div>
+        <div class="absolute">
+            <div>heyy</div>
+        </div>
+        <div class="fixed">
+            <div>hi</div>
+        </div>
+    </body>
+
+</html>
